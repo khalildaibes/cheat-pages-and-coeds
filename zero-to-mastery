@@ -1,0 +1,199 @@
+******************************************************************
+<br> *****break just like newline
+
+Styling with CSS you cerate the  class/container/something 
+And then add to the website code the reference path to the file 
+With this code : <link rel="stylesheet" type="text/css" href="something ~/style.css">
+
+Flexbox 
+Flexbox has a lot of recourse for flexbox to shift and trick css 
+To active flexbox 
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+Flex box cheat cheat link : https://darekkay.com/flexbox-cheatsheet/
+.container {
+	display: flex;
+	Flix-wrap: wrap;
+ }
+
+Bootsrtap
+It has a lot of css styles for buldin and getting website styles
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+To implement boostrap things we must include its  css files get it from the website 
+
+
+  Dom is something that the browser create to allow us to modify the html and the css, every browser loads javascript and it reads it, through document objecr we can access the dom 
+
+
+
+
+
+
+******************************************************************
+
+
+
+
+
+
+DOM Selectors
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
+We can use javasdcript to listen to events based on what the user reacts.
+We add the <script> type="text/javascript" src="src"></script> at the bottom of the body tag 
+We can select a button  
+
+
+## events we can listen to in js 
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+#####add a function that logs click ever time we enter the button
+#Var button= document.getElementById("button")[0];
+#button.addEventListner("mouseenter", function(){
+#Console.log("Click!!!);
+#})
+
+
+##### 
+
+##Javascript char codes:
+https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
+Document.querySelctor("li").classListadd("coolTitle");
+Document.querySelctor("li").innerHTML="<strong>!!!</strong>";
+
+
+******************************************************************
+SCOPE is the memory if the block you are in, at first the root has the document scope 
+And every function you create creates a scope in the memory to has its own memory 
+Scope .
+
+Optional chaning is replacing if statments with " ?."
+Let power = andrei_pokemon?.pikachue?.power || "nopower"
+?. Is returning true/1 false/0 
+
+Nullish colaesion operator "??" is good where we use  || 
+ returns false if undefined or error 
+
+
+
+******************************************************************
+http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/
+https://github.com/getify/You-Dont-Know-JS
+
+Plugins for js in vscode 
+https://scotch.io/bar-talk/22-best-visual-studio-code-extensions-for-web-development
+
+
+
+******************************************************************
+GITHUB COMMANDS 
+Source control that has ultimate version to the project
+Colning a project is to import its files to your disktop
+Git  clone <Your github ssh link>
+
+
+
+******************************************************************
+Css propertys 
+
+Set a bg 
+Body{
+	Background-image: url (image url .ext );
+	Background-size:cover;
+}
+
+Remove dots from li opjects 
+
+Li{
+	Liost-style: none;
+}
+
+
+Changing mouse cursor to pointer when hovering 
+
+H2{
+	Cursor : pointer;
+}
+
+To make more than one thing have the same css class we use 
+Somting like 
+H2 , p{
+	Color: red;
+} 
+
+***********************************************************************************
+CSS Cheat Sheet
+
+Reference:
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+Cascading Style Sheets at the most basic level it indicates that the order of CSS rules matter. 
+
+
+.class
+#id
+*---this is used to specify all items in the css, usualy used in the first section (
+*{
+Tetxt -align: left;
+}
+
+
+element
+element, element ;;;; two elements with the same css 
+element element   ;;;;; If we see something like this =>  h2 p {  } this means all p's inside h2's
+element > element;;;; ; If we see something like this =>  h2 > p { } all p that have a parent of size 1  of h2 
+element + element;;;;;; If we see something like this h2 + p { }  => select any p exactly after and not within  a h2 element 
+H2+p :hover{} cahnge the mouse icon while hovering around the button 
+
+:last-child
+:first-child
+!important (not recommended overrides any previreous or upcoming tags )
+
+
+What seletors win out in the cascade depends on:
+-Specificity
+-Importance
+-Source Order
+
+
+***********************************************************************************
+Css texts:
+{Test-align-center 
+Tesxt-transform : uppercase }
+make all text in capital letters 
+Line-hieght: 10px the sapce between the lines in text 
+Font-style: italic ; changes the font 
+Font-size:100%; cahnge the font size 
+Font-family : "times new Roman", georgia ;  this means change the font to the times new roman font
+The georgia means that if the font isnt supproted change the font to gerogia
+
+
